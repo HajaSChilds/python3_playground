@@ -53,4 +53,3 @@ if not state:
 
 city = cities.get('TX', 'Does Not Exist')
 print(f" the city for the state 'TX is: {city}")    
-
