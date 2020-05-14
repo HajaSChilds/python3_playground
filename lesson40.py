@@ -20,7 +20,7 @@ ring_around_the_rosie = Song([" Ring around the rosie",
                                
 
 
-santa = "We wish you a merry christmas"                                                      
+santa = ["We wish you a merry christmas" ]                                                     
 
 happy_bday.sing_me_a_song()
 
@@ -29,4 +29,5 @@ bulls_on_parade.sing_me_a_song()
 ring_around_the_rosie.sing_me_a_song()
 
 merry_christmas = Song([santa])
+
 merry_christmas.sing_me_a_song()
