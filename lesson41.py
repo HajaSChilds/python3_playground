@@ -32,6 +32,7 @@ for word in urlopen(WORD_URL).readlines():
 
 def convert(snippet, phrase):
     class_names = [w.capitalize() for w in random.sample(WORDS, snippet.count("%%%"))]   
+   
     other_names = random.sample(WORDS, snippet.count("***"))
     results = []
     param_names = []
@@ -42,6 +43,7 @@ def convert(snippet, phrase):
 
     for sentence in snippet, phrase:
         result = sentence[:] 
+        print(result)
 
         #fake class names
         for word in class_names:
@@ -49,14 +51,14 @@ def convert(snippet, phrase):
 
         #fake other names
         for word in other_names:
-            result = result.replace("***", word, 1)     
-
+            result = result.replace("***", word, 1)            
+            
         #fake parameter lists
         for word in param_names:
             result = result.replace("@@@", word, 1)
 
-            results.append(result)  
-
+        results.append(result)  
+    
     return results
 
 # keep going until they hit CTRL-D
@@ -71,9 +73,9 @@ try:
             if PHRASE_FIRST:
                 question, answer = answer, question
 
-                print(question)
-                input("> ")
-                print(f"ANSWER: {answer}\n\n")
+            print(question)
+            input("> ")
+            print(f"ANSWER: {answer}\n\n")
 
 except EOFError:
     print("\nBye")
