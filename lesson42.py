@@ -1,39 +1,39 @@
 ## Animal is- a object (yes, sort of confusing) look at the extra credit
 class Animal(object):
-pass
+    pass
 
  ##Dog is- a Animal
 class Dog(Animal):
 
-def __init__(self, name):
+    def __init__(self, name):
  ##Dog has -a name
-self.name = name
+      self.name = name
 
   # Cat is-a Animal
 class Cat(Animal):
 
-def __init__(self, name):
-  # Cat has-a name
-self.name = name
+  def __init__(self, name):
+    # Cat has-a name
+    self.name = name
 
   ## Person is-a object
 class Person(object):
 
-def __init__(self, name):
+  def __init__(self, name):
   # Person has-a name
-self.name = name
+    self.name = name
 
  # Person has- a pet of some kind
-self.pet = None
+    self.pet = None
 
   # Employee is-a Person
- class Employee(Person):
+class Employee(Person):
 
- def __init__(self, name, salary):
+  def __init__(self, name, salary):
   # ?? Employee is-a Person
- super(Employee, self).__init__(name)
-  #Employee has-a salary
- self.salary = salary
+    super(Employee, self).__init__(name)
+    #Employee has-a salary
+    self.salary = salary
 
   # Fish is-a object
 class Fish(object):
