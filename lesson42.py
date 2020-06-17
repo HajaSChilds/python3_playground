@@ -30,7 +30,7 @@ class Person(object):
 class Employee(Person):
 
   def __init__(self, name, salary):
-  # ?? Employee is-a Person
+  # Employee is-a Person
     super(Employee, self).__init__(name)
     #Employee has-a salary
     self.salary = salary
