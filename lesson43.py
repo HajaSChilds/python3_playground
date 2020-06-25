@@ -89,7 +89,7 @@ class LaserWeaponArmory(Scene):
             There's a keypad lock on the box and you need the code to get the bomb out. If you get the code wrong times then the lock closes forever and you can't get the bomb. The code is 3 digits.
             """))
 
-        code = "123"   #f"{randint(1,9)}{randint(1,9)}{randint(1,9)}""
+        code = "123"   #f"{randint(1,9)}{randint(1,9)}{randint(1,9)}"
         guess = input("[keypad]> ")
         guesses = 0
         
