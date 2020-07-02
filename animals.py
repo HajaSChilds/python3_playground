@@ -1,18 +1,28 @@
 class Animal:
-    def __init__(self):
-        self.bite = bite
-    
-    def bite():
+    def __init__(self, name):
+        self.name = name
+
+    def enterGarden(self):
+        print("The animal has entered your garden")
+        return   
+
+    def bite(self):
         print("The animal bites you")
+        return
 
-    def eat():
-        print("The animal eats your garden") 
+    def eat(self):
+        print("The animal eats your garden")
+        return
 
-    def run():
+    def run(self):
         print("The animal runs away")
+        return
 
-    def dies():
+    def dies(self):
         print("You've killed the animal")
+        return
+
+
 
 class Fox(Animal):
     pass
